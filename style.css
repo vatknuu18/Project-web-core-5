@@ -95,7 +95,9 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 110px;
+  margin-bottom: 55px;
+  position: relative;
+  left: -10px;
 }
 
 .divider .or-text {
