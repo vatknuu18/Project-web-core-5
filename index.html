@@ -1,79 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project-web-core-5</title>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Investor Signup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="left-block">
-            <img src="img/bg.jpg" width="740" height="990" alt="logo"> 
-            <!-- использовать флекс команды -->
-        </div> 
-    <div class="registration container">
-        <div class="header">
-    <h1> Get iintoo it day</h1>
-    <p class="subtext"> There is no charge or obligation upon registration.</p>
+  <div class="container">
+    <!-- Левая часть -->
+    <div class="left">
+      <img src="/img/logo.svg" alt="Logo" class="logo-absolute"/>
+      <img src="/img/bg.jpg" alt="Background Graphic" class="bg-image"/>
+    </div>
+
+    <!-- Правая часть -->
+    <div class="right">
+      <h1>Get iintoo it today</h1>
+      <p class="subtext">There is no charge or obligation upon registration.</p>
+
+      <div class="social-buttons">
+        <button class="btn facebook">
+          <img src="/img/facebook.svg" alt="Facebook" />
+          Register with Facebook
+        </button>
+        <button class="btn linkedin">
+          <img src="/img/linkedin.svg" alt="LinkedIn" />
+          Register with LinkedIn
+        </button>
+      </div>
+
+      <div class="divider">
+        <span class="line"></span>
+        <span class="or-text">OR</span>
+        <span class="line"></span>
+      </div>
+
+      <form>
+        <div class="input-group">
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Phone" />
         </div>
 
-    <div class="Socialbuttons">
-        <button class="Socialbuttons">
-        <img src="img/facebook.svg" alt="Facebook" style="height: 16px; margin-right: 8px;"> Register with Facebook
-        </button>
-        <button class="Socialbuttons">
-        <img src="img/linkedin.svg" alt="Facebook" style="height: 16px; margin-right: 8px;"> Register with LinkedIn
-        </button>
-        <div class="divider">OR</div>
-        <form>
-        <input type="email" placeholder="Email" value="gus.goodwin@gmail.com" required/>
-        <input type="tel" placeholder="Phone"/>
-        
+        <p class="investor-label">What type of investor are you?</p>
+        <p class="investor-sub">Select the type of investor you are below.</p>
+
         <div class="radio-group">
-            <h2>What type of investor are you?</h3>
-            <p>Select the type of investor you are below.</p>
-            
-            <div class="radio-options">
-                <label class="radio-option">
-                    <input type="radio" name="investor-type" checked>
-                    <span class="radio-custom"></span>
-                    Individual
-                    <!-- она сказали добавить снизу блок див слеладть его невидимым disabled типо того -->
-                </label>
-                
-                <label title="I'm a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common." 
-                class="radio-option">
-                    <input type="radio" name="investor-type">
-                    <span class="radio-custom"></span>
-                    Business
-
-                </label>
-                
-                <label title="I'm a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common." 
-                class="radio-option">
-                    <input type="radio" name="investor-type">
-                    <span class="radio-custom"></span>
-                    IRA
-                </label>
-                
-                <label title="I'm a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common." 
-                class="radio-option">
-                    <input type="radio" name="investor-type">
-                    <span class="radio-custom"></span>
-                    Trust
-                </label>
-                
-
+          <label>
+            <input type="radio" name="investor" />
+            <span>Individual</span>
+            <span class="info">i
+              <div class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div>
+            </span>
+          </label>
+          <label>
+            <input type="radio" name="investor" />
+            <span>Business</span>
+            <span class="info">i
+              <div class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div>
+            </span>
+          </label>
+          <label>
+            <input type="radio" name="investor" />
+            <span>IRA</span>
+            <span class="info">i
+              <div class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div>
+            </span>
+          </label>
+          <label>
+            <input type="radio" name="investor" />
+            <span>Trust</span>
+            <span class="info">i
+              <div class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div>
+            </span>
+          </label>
         </div>
+
+        <label class="terms">
+          <input type="checkbox" required />
+          I agree to the terms and receiving notifications from iintoo
+          <a href="#">View full terms</a>
+        </label>
+
+        <button type="submit" class="create-btn">Create Account</button>
+      </form>
     </div>
-    <div class="terms">
-        <p>
-            <input type="checkbox" checked>
-            <label>I agree to the terms and receiving notification from iintoo <a href="/">View full terms</a></label>
-        </p>
-        <button type="submit" class="sumbit">Create Account</button>
-    </form>
-    </div>
+  </div>
 </body>
 </html>

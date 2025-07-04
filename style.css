@@ -1,24 +1,226 @@
-body{
-    font-family: 'Barlow';
-
-.barlow-regular {
-  font-family: "Barlow", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+* {
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
 }
 
-.barlow-light-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 300;
-  font-style: italic;
+body {
+  margin: 0;
+  background-color: #EFF6FF;
+  color: #2A4A5C;
 }
-.left-block{
-display:flex;
-justify-content: flex-start;
+
+.container {
+  display: flex;
+  width: 1440px;
+  height: 990px;
+  margin: 0 auto;
 }
-.registration container{
-display:flex;
-justify-content: flex-start;
-background-color: green;
+
+.left {
+  width: 740px;
+  height: 990px;
+  position: relative;
 }
+
+.bg-image {
+  width: 740px;
+  height: 990px;
+  object-fit: cover;
+}
+
+.logo-absolute {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 120px;
+  z-index: 2;
+}
+
+.right {
+  width: 700px;
+  height: 990px;
+  background-color: #FFFFFF;
+  padding: 114px 75px 0 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 27px;
+  margin-bottom: 16px;
+}
+
+.subtext {
+  font-size: 19px;
+  color: #7B8A92;
+  margin-bottom: 55px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 55px;
+}
+
+.btn {
+  width: 246px;
+  height: 58px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.facebook {
+  background-color: #255A9B;
+}
+
+.linkedin {
+  background-color: #0076B6;
+}
+
+.btn img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 110px;
+}
+
+.divider .or-text {
+  font-size: 13px;
+  color: #AFAFAF;
+  margin: 0;
+}
+
+.divider .line {
+  height: 1px;
+  width: 107px;
+  background-color: #AFAFAF;
+}
+
+.input-group {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 64px;
+}
+
+.input-group input {
+  width: 246px;
+  height: 58px;
+  padding: 0 15px;
+  font-size: 16px;
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+}
+
+.investor-label {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.investor-sub {
+  font-size: 13px;
+  color: #7B8A92;
+  margin-bottom: 30px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 44px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #3698FB;
+}
+
+.radio-group .info {
+  width: 12px;                
+  height: 12px;               
+  background-color: #96A5B1;
+  color: white;
+  font-size: 8px;             
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 12px;          /* совпадает с высотой — для выравнивания */
+  cursor: pointer;
+  position: relative;
+  margin-left: 4px;           /* небольшой отступ от текста */
+  flex-shrink: 0;
+}
+
+.radio-group .tooltip {
+  display: none;
+  position: absolute;
+  top: 30px; /* отступ вниз на 30px */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 240px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  font-size: 10px;
+  color: #2A4A5C;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  z-index: 5;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.radio-group .info:hover .tooltip {
+  display: block;
+}
+
+.terms {
+  font-size: 13px;
+  color: #7B8A92;
+  margin-bottom: 0px;
+}
+
+.terms input {
+  margin-right: 8px;
+}
+
+.terms a {
+  color: #3698FB;
+  text-decoration: none;
+}
+
+.create-btn {
+  width: 245px;
+  height: 42px;
+  background-color: #3698FB;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 58px;
 }
