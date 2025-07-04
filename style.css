@@ -169,23 +169,24 @@ h1 {
   font-weight: bold;
   border-radius: 50%;
   text-align: center;
-  line-height: 12px;          /* совпадает с высотой — для выравнивания */
+  line-height: 12px;          
   cursor: pointer;
   position: relative;
-  margin-left: 4px;           /* небольшой отступ от текста */
+  margin-left: 4px;           
   flex-shrink: 0;
 }
 
 .radio-group .tooltip {
   display: none;
   position: absolute;
-  top: 30px; /* отступ вниз на 30px */
+  top: 30px; 
   left: 50%;
   transform: translateX(-50%);
-  width: 240px;
+  width: 260px;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
-  font-size: 10px;
+  font-size: 13px;
+  font-weight: 100;
   color: #2A4A5C;
   padding: 8px;
   border-radius: 4px;
@@ -202,11 +203,12 @@ h1 {
 .terms {
   font-size: 13px;
   color: #7B8A92;
-  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .terms input {
   margin-right: 8px;
+  margin-top:48px
 }
 
 .terms a {
@@ -224,5 +226,5 @@ h1 {
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 58px;
+  margin-top: 64px;
 }
