@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>project-web-core5</title>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -39,8 +38,14 @@
 
       <form>
         <div class="input-group">
-          <input type="email" placeholder="Email" required />
-          <input type="tel" placeholder="Phone" />
+          <div class="input-wrapper">
+            <label for="email">Email</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="input-wrapper">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone"/>
+        </div>
         </div>
 
         <p class="investor-label">What type of investor are you?</p>

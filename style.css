@@ -1,71 +1,84 @@
+@font-face {
+  font-family:"Barlow";
+  src: url("assets/fonts/BarlowCondensed-Regular.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Barlow', sans-serif;
 }
 
 body {
-  margin: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh;
   background-color: #EFF6FF;
   color: #2A4A5C;
 }
 
 .container {
   display: flex;
-  width: 1440px;
-  height: 990px;
+  width: 1200px; /* уменьшено с 1440px */
+  height: 850px; /* уменьшено с 990px */
   margin: 0 auto;
 }
 
 .left {
-  width: 740px;
-  height: 990px;
+  width: 600px; /* уменьшено с 740px */
+  height: 850px; /* уменьшено с 990px */
   position: relative;
 }
 
 .bg-image {
-  width: 740px;
-  height: 990px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .logo-absolute {
   position: absolute;
-  top: 30px;
-  left: 30px;
-  width: 120px;
+  top: 20px; /* уменьшено с 30px */
+  left: 20px; /* уменьшено с 30px */
+  width: 100px; /* уменьшено с 120px */
   z-index: 2;
 }
 
 .right {
-  width: 700px;
-  height: 990px;
+  width: 600px; /* уменьшено с 700px */
+  height: 850px; /* уменьшено с 990px */
   background-color: #FFFFFF;
-  padding: 114px 75px 0 75px;
+  padding: 80px 50px 0 50px; /* уменьшен padding сверху и по бокам */
   display: flex;
   flex-direction: column;
 }
-
 h1 {
-  font-size: 27px;
-  margin-bottom: 16px;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .subtext {
-  font-size: 19px;
+  font-size: 12px;
   color: #7B8A92;
+  margin-top: 10px;
   margin-bottom: 55px;
 }
 
 .social-buttons {
   display: flex;
-  gap: 35px;
-  margin-bottom: 55px;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .btn {
-  width: 246px;
-  height: 58px;
-  font-size: 16px;
+  width: 220px;
+  height: 50px;
+  font-size: 12px;
   font-weight: 600;
   border-radius: 4px;
   display: flex;
@@ -85,23 +98,22 @@ h1 {
 }
 
 .btn img {
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
 }
 
 .divider {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 25px;
   margin-bottom: 55px;
   position: relative;
-  left: -10px;
 }
 
 .divider .or-text {
-  font-size: 13px;
+  font-size: 12px;
   color: #AFAFAF;
   margin: 0;
 }
@@ -114,27 +126,54 @@ h1 {
 
 .input-group {
   display: flex;
-  gap: 35px;
-  margin-bottom: 64px;
+  justify-content:space-between; /* удалить исп justify-content space-between*/
+  margin-bottom: 60px;
 }
 
-.input-group input {
-  width: 246px;
-  height: 58px;
-  padding: 0 15px;
-  font-size: 16px;
+.input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 50px;
+}
+
+.input-wrapper label {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  font-size: 12px;
+  color: #7B8A92;
+  pointer-events: none;
+  background: white;
+  padding: 0 4px;
+  z-index: 1;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 100%;
+  padding: 18px 15px 8px 15px;
+  font-size: 12px;
   border: 1px solid #EEEEEE;
+  border-left: 4px solid transparent;
   border-radius: 4px;
+  outline: none;
+  transition: border-left-color 0.3s;
+}
+
+.input-wrapper input:focus {
+  border-left-color: #3698FB;
 }
 
 .investor-label {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
 .investor-sub {
-  font-size: 13px;
+  font-size: 12px;
   color: #7B8A92;
   margin-bottom: 30px;
 }
@@ -201,14 +240,14 @@ h1 {
 }
 
 .terms {
-  font-size: 13px;
+  font-size: 12px;
   color: #7B8A92;
   margin-top: 0px;
 }
 
 .terms input {
-  margin-right: 8px;
-  margin-top:48px
+  margin-right: 7px;
+  margin-top:50px
 }
 
 .terms a {
@@ -222,9 +261,9 @@ h1 {
   background-color: #3698FB;
   color: white;
   border: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 64px;
+  margin-top: 60px;
 }
